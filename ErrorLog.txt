@@ -1,0 +1,903 @@
+Time: 04/12/2021 09:05:09 AM
+-----------------------------------------------------------
+Message: Transaction (Process ID 96) was deadlocked on lock | communication buffer resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 10/12/2021 04:39:03 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 10/12/2021 04:59:03 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 10/12/2021 06:09:03 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 10/12/2021 06:34:02 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at DBfunc.getDocNo(String dot_type, SqlConnection& pConn, SqlTransaction pTransaction)
+   at cronjobImplement.ImportTOData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 14/12/2021 10:30:02 AM
+-----------------------------------------------------------
+Message: 物料295353-1不存在!
+StackTrace:    at StockTrans.UpdateStockTrans(String in_out_type, SqlConnection& pConn, SqlTransaction pTransaction, String& errorMsg)
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+Source: App_Code.litizuip
+TargetSite: Boolean UpdateStockTrans(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction, System.String ByRef)
+-----------------------------------------------------------
+
+Time: 16/12/2021 10:30:17 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 17/12/2021 02:05:17 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 17/12/2021 04:51:05 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 17/12/2021 05:01:04 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 17/12/2021 05:11:04 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 18/12/2021 11:35:18 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 19/12/2021 08:20:18 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 26/12/2021 08:25:20 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 26/12/2021 11:55:20 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 30/12/2021 09:01:12 AM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at cronjobImplement.ImportSO_GRNData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 31/12/2021 02:15:56 PM
+-----------------------------------------------------------
+Message: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF)
+   at DBfunc.getDocNo(String dot_type, SqlConnection& pConn, SqlTransaction pTransaction)
+   at cronjobImplement.ImportSRData()
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Time: 02/01/2022 12:35:16 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 02/01/2022 05:45:19 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 04/01/2022 01:15:20 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 05/01/2022 08:10:20 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 07/01/2022 05:00:45 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF)
+   at DBfunc.getDocNo(String dot_type, SqlConnection& pConn, SqlTransaction pTransaction)
+   at cronjobImplement.ImportSOData()
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Time: 07/01/2022 09:20:20 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 09/01/2022 04:00:20 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 09/01/2022 03:50:17 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 09/01/2022 06:45:16 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 10/01/2022 03:55:20 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 10/01/2022 08:15:16 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 10/01/2022 08:45:16 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 10/01/2022 11:35:19 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 11/01/2022 07:05:16 AM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection()
+   at cronjobImplement.POSTDATASTKADJ(String STKADJCodes)
+   at cronjobImplement.ImportSOADJData()
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 17/11/2023 10:21:13 PM
+-----------------------------------------------------------
+Message: Cannot find column CO_INV_NO.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7555
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_upe4cvu3
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 03:27:45 PM
+-----------------------------------------------------------
+Message: Invalid column name 'BEGIN_QTY_STK'.
+Invalid column name 'DO_QTY'.
+Invalid column name 'REMAINING_BAL'.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 04:48:26 PM
+-----------------------------------------------------------
+Message: Invalid column name 'ITM_CODE'.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 04:52:33 PM
+-----------------------------------------------------------
+Message: Invalid column name 'ITM_CODE'.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 04:58:54 PM
+-----------------------------------------------------------
+Message: Object cannot be cast from DBNull to other types.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_lcwex1qa
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 05:06:13 PM
+-----------------------------------------------------------
+Message: Object cannot be cast from DBNull to other types.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: mscorlib
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 05:07:49 PM
+-----------------------------------------------------------
+Message: Object cannot be cast from DBNull to other types.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_lcwex1qa
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 05:14:10 PM
+-----------------------------------------------------------
+Message: Conversion from string "Update WMS_CUST_ORDER_D set BEGI" to type 'Double' is not valid.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: Microsoft.VisualBasic
+TargetSite: Double ToDouble(System.String, System.Globalization.NumberFormatInfo)
+-----------------------------------------------------------
+
+Time: 27/11/2023 05:15:51 PM
+-----------------------------------------------------------
+Message: Conversion from string "Update WMS_CUST_ORDER_D set BEGI" to type 'Double' is not valid.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_lk4dsxxs
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 05:17:16 PM
+-----------------------------------------------------------
+Message: Conversion from string "Update WMS_CUST_ORDER_D set BEGI" to type 'Double' is not valid.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_lk4dsxxs
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 05:20:05 PM
+-----------------------------------------------------------
+Message: Conversion from string "Update WMS_CUST_ORDER_D set BEGI" to type 'Double' is not valid.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_lk4dsxxs
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 06:33:12 PM
+-----------------------------------------------------------
+Message: Incorrect syntax near 'COD_ITM_CODE'.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 27/11/2023 06:38:38 PM
+-----------------------------------------------------------
+Message: Object cannot be cast from DBNull to other types.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: App_Web_feg24uod
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 30/11/2023 09:21:32 PM
+-----------------------------------------------------------
+Message: The multi-part identifier "ss.CO_STATUS" could not be bound.
+The multi-part identifier "ss.CO_EDI_SIR_NO" could not be bound.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 30/11/2023 09:54:00 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection() in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 19
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 157
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3170
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 30/11/2023 09:55:28 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection() in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 19
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 157
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3170
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 30/11/2023 09:58:25 PM
+-----------------------------------------------------------
+Message: External component has thrown an exception.
+StackTrace:    at Microsoft.Win32.Win32Native.CloseHandle(IntPtr handle)
+   at Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.ReleaseHandle()
+   at System.Runtime.InteropServices.SafeHandle.InternalDispose()
+   at System.Runtime.InteropServices.SafeHandle.Dispose(Boolean disposing)
+   at System.Security.Principal.WindowsIdentity.Dispose(Boolean disposing)
+   at System.Data.SqlClient.SqlConnection.Close()
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 213
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3683
+Source: mscorlib
+TargetSite: Boolean CloseHandle(IntPtr)
+-----------------------------------------------------------
+
+Time: 01/12/2023 01:10:05 AM
+-----------------------------------------------------------
+Message: Incorrect syntax near 'COD_ITM_CODE'.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 11/12/2023 04:07:23 PM
+-----------------------------------------------------------
+Message: Could not find stored procedure 'False'.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7553
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 11/12/2023 04:13:50 PM
+-----------------------------------------------------------
+Message: Error converting data type varchar to numeric.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 47
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9722
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3605
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Time: 11/12/2023 04:16:22 PM
+-----------------------------------------------------------
+Message: Error converting data type varchar to numeric.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 47
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9722
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3605
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Time: 11/12/2023 06:07:56 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection() in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 19
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 157
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3170
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 11/12/2023 06:08:50 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection() in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 19
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 157
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3170
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 11/12/2023 06:10:09 PM
+-----------------------------------------------------------
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at GlobalDBFunc.getConnection() in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 19
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 157
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3170
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+-----------------------------------------------------------
+
+Time: 14/03/2024 08:44:07 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 47
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9727
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3605
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Time: 14/03/2024 09:38:54 PM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 47
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9725
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3605
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Time: 15/03/2024 12:30:35 AM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 47
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9727
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3605
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Time: 15/03/2024 01:31:20 AM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction)
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY)
+   at IMPORTEXPORT.ImportSOData()
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Time: 15/03/2024 03:49:00 AM
+-----------------------------------------------------------
+Message: A transport-level error has occurred when receiving results from the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at IMPORTEXPORT.ImportSOData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 15/03/2024 04:06:16 AM
+-----------------------------------------------------------
+Message: Cannot continue the execution because the session is in the kill state.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut)
+   at IMPORTEXPORT.getLastLot(String ITEM_CODE, String STORER_CODE, String CUS_CODE)
+   at IMPORTEXPORT.ImportSOData()
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 15/03/2024 04:28:50 AM
+-----------------------------------------------------------
+Message: A transport-level error has occurred when receiving results from the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE)
+   at IMPORTEXPORT.ImportSOData()
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 15/03/2024 04:42:28 AM
+-----------------------------------------------------------
+Message: A transport-level error has occurred when receiving results from the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE)
+   at IMPORTEXPORT.ImportSOData()
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 15/03/2024 04:59:36 AM
+-----------------------------------------------------------
+Message: A transport-level error has occurred when receiving results from the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7555
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 15/03/2024 05:20:19 AM
+-----------------------------------------------------------
+Message: The process cannot access the file 'C:\LAMSOON_DEV\LAMSOON_DEV_LOG\AppLog20240315.txt' because it is being used by another process.
+StackTrace:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at PrgmLog.writeSimpleLog(String message) in C:\LAMSOON_DEV\App_Code\PrgmLog.vb:line 125
+   at PrgmLog.writeLog(String message) in C:\LAMSOON_DEV\App_Code\PrgmLog.vb:line 111
+   at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 204
+   at IMPORTEXPORT.getLastLot(String ITEM_CODE, String STORER_CODE, String CUS_CODE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 56
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3443
+Source: mscorlib
+TargetSite: Void WinIOError(Int32, System.String)
+-----------------------------------------------------------
+
+Time: 15/03/2024 05:43:36 AM
+-----------------------------------------------------------
+Message: A transport-level error has occurred when receiving results from the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7555
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 15/03/2024 06:30:51 PM
+-----------------------------------------------------------
+Message: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+StackTrace:    at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSetProc(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 81
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9727
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3605
+Source: System.Data
+TargetSite: Void ValidateCommand(System.String, Boolean)
+-----------------------------------------------------------
+
+Time: 15/03/2024 06:38:17 PM
+-----------------------------------------------------------
+Message: Cannot continue the execution because the session is in the kill state.
+StackTrace:    at IMPORTEXPORT.LotAllocationCO(SqlTransaction transaction, SqlConnection gConn, String BatchNo, String STORER_TYPE) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 7555
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3588
+Source: .Net SqlClient Data Provider
+TargetSite: Void LotAllocationCO(System.Data.SqlClient.SqlTransaction, System.Data.SqlClient.SqlConnection, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 16/03/2024 02:11:25 PM
+-----------------------------------------------------------
+Message: Cannot continue the execution because the session is in the kill state.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryCloseInternal(Boolean closeReader)
+   at System.Data.SqlClient.SqlDataReader.Close()
+   at System.Data.Common.DbDataReader.Dispose(Boolean disposing)
+   at System.Data.Common.DbDataReader.Dispose()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSetProc(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 81
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9725
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3603
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+

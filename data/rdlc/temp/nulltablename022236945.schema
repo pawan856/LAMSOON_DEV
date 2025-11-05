@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" Name="DTHKE_INV_RPT">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="nulltablename" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nulltablename">
+          <xs:complexType>
+            <xs:sequence title="Stock Inventory Report" company="" border="" showheader="false" showfooter="true" pageheight="210mm" pagewidth="297mm" fontsize="6pt" linewidth="27.7cm" userid="LS_ADMIN">
+              <xs:element name="ITM_SKU_NO" type="xs:string" minOccurs="0" align="Left" label="Stock No." label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_DESC" type="xs:string" minOccurs="0" align="Left" label="Description" label2="" width="1.06cm" hd_width="1.06cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_UOM" type="xs:string" minOccurs="0" align="Left" label="UOM" label2="" width="1.06cm" hd_width="1.06cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILOC_BATCH_NO" type="xs:string" minOccurs="0" align="Left" label="Batch No" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILOC_MANU_DATE" type="xs:string" minOccurs="0" align="Left" label="Manufacturing Date" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILOC_EXPIRY_DATE" type="xs:string" minOccurs="0" align="Left" label="Expiry date" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILBS_SERIAL_NO" type="xs:string" minOccurs="0" align="Left" label="Serial No" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILBS_DRUM_ID" type="xs:string" minOccurs="0" align="Left" label="Drum #" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="WH_MAIN_WH" type="xs:string" minOccurs="0" align="Left" label="Main WH" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="WH_CODE" type="xs:string" minOccurs="0" align="Left" label="Warehouse" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="BN_CSMS_CODE" type="xs:string" minOccurs="0" align="Left" label="Location" label2="" width="1.06cm" hd_width="1.06cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="TOTAL_BAL" type="xs:decimal" minOccurs="0" align="Left" label="Balance" label2="" width="1.06cm" hd_width="1.06cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="STO_NAME" type="xs:string" minOccurs="0" align="Left" label="Storer" label2="" width="1.06cm" hd_width="1.06cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

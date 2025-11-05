@@ -1,0 +1,2 @@
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="Lookup_Checker.ascx.vb" Inherits="CustomControls_Lookup_ListNo" %>
+<asp:TextBox ID="txt_checker" runat="server" Font-Size="11px" Width="60px" MaxLength="50" Text="" ></asp:TextBox>

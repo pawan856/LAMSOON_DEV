@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" Name="DTOB_DO">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="WMS_DELV_ORDER" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WMS_DELV_ORDER">
+          <xs:complexType>
+            <xs:sequence title="Delivery Order Report" company="" border="" showheader="true" showfooter="true" pageheight="210mm" pagewidth="297mm" fontsize="6pt" linewidth="27.7cm" userid="OTSADMIN">
+              <xs:element name="DO_CODE" type="xs:string" minOccurs="0" align="Left" label="DO Code" label2="" width="1.2cm" hd_width="1.2cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="STO_SHORTNAME" type="xs:string" minOccurs="0" align="Left" label="Storer" label2="" width="3.75cm" hd_width="3.75cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_EDI_SIR_NO" type="xs:string" minOccurs="0" align="Left" label="EDI Co Code" label2="" width="1.5cm" hd_width="1.5cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_CO_CODE" type="xs:string" minOccurs="0" align="Left" label="CO No." label2="" width="1.5cm" hd_width="1.5cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_VEHICLE_NO" type="xs:string" minOccurs="0" align="Left" label="Vehicle No." label2="" width="3.75cm" hd_width="3.75cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_INV_NO" type="xs:string" minOccurs="0" align="Left" label="Invoice No." label2="" width="1.5cm" hd_width="1.5cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_DATE" type="xs:string" minOccurs="0" align="Left" label="DO Date" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="SYS_LUD" type="xs:dateTime" minOccurs="0" align="Left" label="Last Update Date" label2="" width="3.75cm" hd_width="3.75cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="SYS_CB" type="xs:string" minOccurs="0" align="Left" label="Created By" label2="" width="3.75cm" hd_width="3.75cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_STATUS" type="xs:string" minOccurs="0" align="Left" label="Status" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_DELI_STATUS" type="xs:string" minOccurs="0" align="Left" label="Delivery Status" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_CONF_DELDATE" type="xs:dateTime" minOccurs="0" align="Left" label="Delivery Date" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_DELI_RMKS" type="xs:string" minOccurs="0" align="Left" label="Delivery Remark" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_STORER_REM" type="xs:string" minOccurs="0" align="Left" label="Storer Remark" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="DO_TO_STORER_REM" type="xs:string" minOccurs="0" align="Left" label="To Storer Remark" label2="" width="1cm" hd_width="1cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

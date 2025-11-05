@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" Name="DTHKE_STK_BAL">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="nulltablename" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nulltablename">
+          <xs:complexType>
+            <xs:sequence title="Stock Balance Report" company="" border="" showheader="false" showfooter="true" pageheight="210mm" pagewidth="297mm" fontsize="6pt" linewidth="27.7cm" userid="LS_ADMIN">
+              <xs:element name="ITM_SKU_NO" type="xs:string" minOccurs="0" align="Left" label="Stock No." label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_NAME" type="xs:string" minOccurs="0" align="Left" label="Noun, Qualifer" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_UOM" type="xs:string" minOccurs="0" align="Left" label="UOM" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILOC_MANU_DATE" type="xs:string" minOccurs="0" align="Left" label="Manufacturing Date" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="TOTAL_ON_HAND" type="xs:decimal" minOccurs="0" align="Left" label="Total on hand" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="UNRES_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Unrestricted" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ILOC_EXPIRY_DATE" type="xs:string" minOccurs="0" align="Left" label="Expiry date" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="INSP_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Pending Insp" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="BLK_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Blocked" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="REST_QTY" type="xs:int" minOccurs="0" align="Left" label="Restricted Use" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="PICKED_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Picked" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="PEND_RT_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Pending Return" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RSV_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Reserved" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="INTRANS_QTY" type="xs:decimal" minOccurs="0" align="Left" label="In Transit" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ON_ORDER_QTY" type="xs:decimal" minOccurs="0" align="Left" label="On Order" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="BACK_ORDER_QTY" type="xs:int" minOccurs="0" align="Left" label="Back-order" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_GP_CODE" type="xs:string" minOccurs="0" align="Left" label="Group Code" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_DIV_CODE" type="xs:string" minOccurs="0" align="Left" label="Div Code" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_TYPE" type="xs:string" minOccurs="0" align="Left" label="Item Type" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="STO_NAME" type="xs:string" minOccurs="0" align="Left" label="Storer" label2="" width="1.03125cm" hd_width="1.03125cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

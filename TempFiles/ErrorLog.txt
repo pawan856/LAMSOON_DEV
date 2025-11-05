@@ -1,0 +1,202 @@
+Time: 13/10/2021 02:36:51 AM
+-----------------------------------------------------------
+Message: The connection is broken and recovery is not possible.  The connection is marked by the server as unrecoverable.  No attempt was made to restore the connection.
+StackTrace:    at GlobalDBFunc.getDataTable(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction, DataTable& TableSchema, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF, Int32 cmdTimeOut) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 203
+   at cronjobImplement.ImportSOData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 2817
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataTable getDataTable(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, System.Data.DataTable ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean, Int32)
+-----------------------------------------------------------
+
+Time: 13/10/2021 10:20:07 PM
+-----------------------------------------------------------
+Message: Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_ACTION1'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_ACTION'. The duplicate key value is (273060).
+Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_SO_HEADER'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_SO_HEADER'. The duplicate key value is (273092, 11784206).
+Violation of PRIMARY KEY constraint 'PK_WMS_CUST_ORDER_D'. Cannot insert duplicate key in object 'dbo.WMS_CUST_ORDER_D'. The duplicate key value is (WMS, 105, 313178, 1).
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 281
+   at cronjobImplement.ArchiveData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 9588
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Time: 13/10/2021 10:20:15 PM
+-----------------------------------------------------------
+Message: Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_ACTION1'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_ACTION'. The duplicate key value is (273060).
+Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_SO_HEADER'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_SO_HEADER'. The duplicate key value is (273092, 11784206).
+Violation of PRIMARY KEY constraint 'PK_WMS_CUST_ORDER_D'. Cannot insert duplicate key in object 'dbo.WMS_CUST_ORDER_D'. The duplicate key value is (WMS, 105, 313178, 1).
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 281
+   at cronjobImplement.ArchiveData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 9588
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Time: 13/10/2021 10:35:53 PM
+-----------------------------------------------------------
+Message: Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_ACTION1'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_ACTION'. The duplicate key value is (273060).
+Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_SO_HEADER'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_SO_HEADER'. The duplicate key value is (273092, 11784206).
+Violation of PRIMARY KEY constraint 'PK_WMS_CUST_ORDER_D'. Cannot insert duplicate key in object 'dbo.WMS_CUST_ORDER_D'. The duplicate key value is (WMS, 105, 313178, 1).
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 281
+   at cronjobImplement.ArchiveData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 9588
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Time: 13/10/2021 10:36:53 PM
+-----------------------------------------------------------
+Message: Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_ACTION1'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_ACTION'. The duplicate key value is (273060).
+Violation of PRIMARY KEY constraint 'PK_EBS_WMS_TRANS_ITX_SO_HEADER'. Cannot insert duplicate key in object 'dbo.EBS_WMS_TRANS_ITX_SO_HEADER'. The duplicate key value is (273092, 11784206).
+Violation of PRIMARY KEY constraint 'PK_WMS_CUST_ORDER_D'. Cannot insert duplicate key in object 'dbo.WMS_CUST_ORDER_D'. The duplicate key value is (WMS, 105, 313178, 1).
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 281
+   at cronjobImplement.ArchiveData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 9588
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Time: 17/11/2021 03:10:36 PM
+-----------------------------------------------------------
+Message: There is no row at position 0.
+StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at cronjobImplement.ImportSOData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 2445
+Source: System.Data
+TargetSite: NodePath GetNodeByIndex(Int32)
+-----------------------------------------------------------
+
+Time: 17/11/2021 03:14:09 PM
+-----------------------------------------------------------
+Message: There is no row at position 0.
+StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at cronjobImplement.ImportSOData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 2445
+Source: System.Data
+TargetSite: NodePath GetNodeByIndex(Int32)
+-----------------------------------------------------------
+
+Time: 17/11/2021 03:14:35 PM
+-----------------------------------------------------------
+Message: There is no row at position 0.
+StackTrace:    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at cronjobImplement.ImportSOData() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 2445
+Source: System.Data
+TargetSite: NodePath GetNodeByIndex(Int32)
+-----------------------------------------------------------
+
+Time: 13/12/2021 01:40:02 AM
+-----------------------------------------------------------
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at GlobalDBFunc.getDataSet(String as_sql, SqlConnection& pConn, SqlTransaction& pTransaction) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 47
+   at IMPORTEXPORT.SendEmail(SqlConnection gConn, SqlTransaction transaction, String Storer1, String Storer2, String BatchNo, String EBSUser, String STORER_TYPE, String DISPLAY_TRAIL_ONLY) in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 9614
+   at IMPORTEXPORT.ImportSOData() in C:\LAMSOON_DEV\IMPORTEXPORT.aspx.vb:line 3589
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+-----------------------------------------------------------
+
+Download Start: 1/30/2022 9:50:07 PM
+Time: 30/01/2022 09:50:10 PM
+-----------------------------------------------------------
+Message: Failure sending mail.
+StackTrace:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at cronjobImplement.SendWrongLOTEmail() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12320
+Source: System
+TargetSite: Void Send(System.Net.Mail.MailMessage)
+-----------------------------------------------------------
+
+Download End: 1/30/2022 9:50:10 PM
+Download Start: 1/30/2022 9:52:56 PM
+Time: 30/01/2022 09:52:56 PM
+-----------------------------------------------------------
+Message: Failure sending mail.
+StackTrace:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at cronjobImplement.SendWrongLOTEmail() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12320
+Source: System
+TargetSite: Void Send(System.Net.Mail.MailMessage)
+-----------------------------------------------------------
+
+Download End: 1/30/2022 9:52:56 PM
+Customer data Start: 1/30/2022 9:54:51 PM
+Customer data End: 1/30/2022 10:02:36 PM
+Master Start: 2/17/2022 1:24:45 AM
+Time: 17/02/2022 01:25:30 AM
+-----------------------------------------------------------
+Message: KILL command cannot be used inside user transactions.
+KILL command cannot be used inside user transactions.
+KILL command cannot be used inside user transactions.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 281
+   at cronjobImplement.KillOpenConnection() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12380
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Master End: 2/17/2022 1:25:30 AM
+Master Start: 2/17/2022 1:26:23 AM
+Time: 17/02/2022 01:26:39 AM
+-----------------------------------------------------------
+Message: Cannot use KILL to kill your own process.
+StackTrace:    at GlobalDBFunc.amendData(String sql, SqlConnection& pConn, SqlTransaction& pTransaction, DBCmdPara& cmdPara, PrgmLog& pLog, Boolean callFromWCF) in C:\LAMSOON_DEV\App_Code\GlobalDBFunc.vb:line 281
+   at cronjobImplement.KillOpenConnection() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12378
+Source: .Net SqlClient Data Provider
+TargetSite: Int64 amendData(System.String, System.Data.SqlClient.SqlConnection ByRef, System.Data.SqlClient.SqlTransaction ByRef, DBCmdPara ByRef, PrgmLog ByRef, Boolean)
+-----------------------------------------------------------
+
+Master End: 2/17/2022 1:26:39 AM
+Master Start: 2/17/2022 1:52:44 AM
+Open connection at: 2/17/2022 1:52:50 AM are 3
+Master End: 2/17/2022 1:52:56 AM
+Download Start: 4/2/2024 2:10:57 PM
+Time: 02/04/2024 02:11:58 PM
+-----------------------------------------------------------
+Message: Failure sending mail.
+StackTrace:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at cronjobImplement.SendWrongLOTEmail() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12341
+Source: System
+TargetSite: Void Send(System.Net.Mail.MailMessage)
+-----------------------------------------------------------
+
+Download End: 4/2/2024 2:11:58 PM
+Download Start: 4/2/2024 2:12:19 PM
+Time: 02/04/2024 02:34:17 PM
+-----------------------------------------------------------
+Message: Failure sending mail.
+StackTrace:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at cronjobImplement.SendWrongLOTEmail() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12341
+Source: System
+TargetSite: Void Send(System.Net.Mail.MailMessage)
+-----------------------------------------------------------
+
+Download End: 4/2/2024 2:34:17 PM
+Download Start: 4/2/2024 2:35:17 PM
+Time: 02/04/2024 02:35:32 PM
+-----------------------------------------------------------
+Message: Failure sending mail.
+StackTrace:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at cronjobImplement.SendWrongLOTEmail() in C:\LAMSOON_DEV\cronjobImplement.aspx.vb:line 12341
+Source: System
+TargetSite: Void Send(System.Net.Mail.MailMessage)
+-----------------------------------------------------------
+
+Download End: 4/2/2024 2:35:32 PM

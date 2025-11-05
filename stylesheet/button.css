@@ -1,0 +1,10 @@
+.all_button {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px; color: #FFFFFF; background-color: #666666; font-weight: bold}
+.all_button:disabled {
+	color: #dddddd;
+	border: solid 1px #555;
+	background: #6e6e6e;
+}
+.loc_button {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px;}
+.selected_button {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px; color: #222222; background-color: #C0DCC0; font-weight: bold; Border-Style: Inset}
+.inactive_button {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px; Border-Style: Inset}
+.add_loc_button {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px;}

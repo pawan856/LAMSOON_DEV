@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" Name="DTRPT_SRSUM">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="nulltablename" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nulltablename">
+          <xs:complexType>
+            <xs:sequence title="Stock Return Summary Report" company="" border="" showheader="true" showfooter="true" pageheight="297mm" pagewidth="210mm" fontsize="8pt" linewidth="19cm" userid="LS_ADMIN">
+              <xs:element name="RT_REF_NO2" type="xs:string" minOccurs="0" align="Left" label="Credit Return No." label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_TYPE" type="xs:string" minOccurs="0" align="Left" label="Return type" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_DATE_D" type="xs:string" minOccurs="0" align="Left" label="Return Date" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_SKU_NO" type="xs:string" minOccurs="0" align="Left" label="Stock No." label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_ITM_NAME" type="xs:string" minOccurs="0" align="Left" label="Noun and Qualifier" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_DRUM_ID" type="xs:string" minOccurs="0" align="Left" label="Drum #" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_SERIAL_NO" type="xs:string" minOccurs="0" align="Left" label="Serial #" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_BATCH_NO" type="xs:string" minOccurs="0" align="Left" label="Batch No." label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_RCV_QTY" type="xs:decimal" minOccurs="0" align="Left" label="Received Qty" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="ITM_UOM" type="xs:string" minOccurs="0" align="Left" label="UOM" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_STATUS" type="xs:string" minOccurs="0" align="Left" label="Status" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_KG" type="xs:decimal" minOccurs="0" align="Left" label="KG" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="BN_CSMS_CODE" type="xs:string" minOccurs="0" align="Left" label="Returned Location (EDI)" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_RCV_BY" type="xs:string" minOccurs="0" align="Left" label="Received By" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_BY" type="xs:string" minOccurs="0" align="Left" label="Return By" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_C8_YN" type="xs:string" minOccurs="0" align="Left" label="C8 Form - Completed (Y/N)" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_CUS_CODE" type="xs:string" minOccurs="0" align="Left" label="MPAC Control No." label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_REM" type="xs:string" minOccurs="0" align="Left" label="Remark" label2="" width="5cm" hd_width="5cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="SIR_NO" type="xs:string" minOccurs="0" align="Left" label="Order No." label2="" width="5cm" hd_width="5cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_REF_DOC_NO" type="xs:string" minOccurs="0" align="Left" label="Return Stock Issue No" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_CODE" type="xs:string" minOccurs="0" align="Left" label="Return Code" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RT_WH" type="xs:string" minOccurs="0" align="Left" label="Warehouse" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+              <xs:element name="RTD_LOC" type="xs:string" minOccurs="0" align="Left" label="Returned Location" label2="" width="2.8cm" hd_width="2.8cm" hd_align="Left" hd_above_height="0.508cm" hd_below_height="0.508cm" colspan="" cellMode="" dateformat="dd/MM/yyyy" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
